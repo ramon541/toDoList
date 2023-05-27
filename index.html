@@ -10,9 +10,33 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>To-do List</title>
   </head>
   <body>
-    <div class="container"></div>
+    <div id="list">
+      <div id="title">
+        <input id="titleInput" type="text" placeholder="My List" />
+        <i class="bx bx-edit"></i>
+      </div>
+
+      <div id="separator"></div>
+
+      <div id="items">
+        <div class="item"></div>
+      </div>
+
+      <div id="addItem">
+        <input id="itemInput" type="text" />
+        <i class="bx bx-plus"></i>
+      </div>
+    </div>
   </body>
 </html>
