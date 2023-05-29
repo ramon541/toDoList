@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     font-family: "Open Sans"; /*300,400,700*/
+    word-break: break-word;
 }
 
 body{
@@ -96,6 +97,7 @@ body{
     font-family: "Open Sans";
     border-radius: 12px;
     color: #3f455f;
+    margin: 2vh 40% 2vh 4vh;
   }
 
   .lt > p{
