@@ -25,17 +25,17 @@ body{
   }
 
   #title{
+    position: relative;
     display: flex;
-    flex-direction: column;
-    align-content: flex-end;
-    justify-content: center;
-    align-items: end;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   #titleInput{
     position: relative;
     display: flex;
     align-items: center;
+    width: 100%;
     font-size: 24px;
     font-weight: 600;
     border-radius: 9px;
@@ -52,8 +52,8 @@ body{
 
   .bx-edit{
     position: absolute;
-    padding-right: 2vh;
-    opacity: .3;
+    margin-right: 2vh;
+    opacity: 0.3;
   }
 
   #separator{
@@ -69,45 +69,76 @@ body{
   #items{
     padding: 8px 8px;
     margin: 12px 0;
+    display: flex;
+    flex-direction: column;
   }
 
   .item {
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: 1vh 0;
+  }
+
+  .bx-checkbox{
+    margin-left: 0vh;
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  
+  p{
+    position: absolute;
+    margin-left: 4vh;
     font-size: 18px;
     font-weight: 400;
     font-family: "Open Sans";
     border-radius: 12px;
-    border: 0;
-    padding: 9px 12px;
     color: #3f455f;
-    position: relative;
+  }
+
+  .lt > p{
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+
+  .bx-trash{
+    margin-right: 1vh;
+    opacity: 0.3;
+    cursor: pointer;
   }
 
   #addItem{
+    position: relative;
     display: flex;
-    flex-direction: column;
-    align-content: stretch;
-    justify-content: center;
-    align-items: end;
+    align-items: center;
+    justify-content: flex-end;
   }
-
+  
   #itemInput{
     position: relative;
+    width: 100%;
     display: flex;
     align-items: flex-end;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 400;
     border-radius: 9px;
     border-style: solid;
-    border-color: rgb(173, 173, 173, .3);
+    border-color: rgb(173, 173, 173, .0);
     border-width: 1px;
     padding: 1vh 2vh 1vh 2vh;
     color: #666f99;
+    background: #f3f5fc;
   }
 
   .bx-plus{
     position: absolute;
-    padding-right: 2vh;
+    margin-right: 2vh;
     opacity: 0.3;
     cursor: pointer;
+  }
+
+  button{
+    background: transparent;
+    border: transparent;
   }

@@ -4,41 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./icons/bx-list-ul.svg" />
     <!-- Boxicons CSS -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-
+    <!-- CSS link -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Google CDN JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
     <title>To-do List</title>
   </head>
   <body>
     <div id="list">
       <div id="title">
-        <input id="titleInput" type="text" placeholder="My List" />
-        <i class="bx bx-edit bx-sm"></i>
+        <input
+          id="titleInput"
+          type="text"
+          placeholder="My List"
+          maxlength="18"
+          spellcheck="false"
+        />
+        <button class="bx bx-edit bx-sm"></button>
       </div>
 
       <div id="separator"></div>
 
-      <div id="items">
-        <div class="item"></div>
-      </div>
+      <div id="items"></div>
 
       <div id="addItem">
-        <input id="itemInput" type="text" />
-        <i class="bx bx-plus bx-sm"></i>
+        <input id="itemInput" type="text" maxlength="30" />
+        <button class="bx bx-plus bx-sm"></button>
       </div>
     </div>
-
     <script src="./js/main.js"></script>
   </body>
 </html>
